@@ -31,6 +31,7 @@ class SongList extends React.Component {
 
     return (
       <div>
+        <h3>Songs List</h3>
         <ul className='collection'>
           <div>{this.renderSongs()}</div>
         </ul>
