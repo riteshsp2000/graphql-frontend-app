@@ -13,11 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
     "apollo-client": "^0.8.1",
     "axios": "^0.19.2",
-    "babel-core": "^6.22.1",
-    "babel-loader": "^6.2.10",
-    "babel-preset-env": "^1.1.8",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.22.0",
     "body-parser": "^1.16.0",
     "connect-mongo": "^3.2.0",
@@ -26,7 +27,6 @@
     "express-graphql": "^0.6.1",
     "express-session": "^1.15.0",
     "graphql": "^0.8.2",
-    "html-webpack-plugin": "^2.26.0",
     "lodash": "^4.17.4",
     "mongoose": "^5.9.15",
     "nodemon": "*",
@@ -39,5 +39,9 @@
     "style-loader": "^0.13.1",
     "webpack": "^4.43.0",
     "webpack-dev-middleware": "^1.9.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.5",
+    "html-webpack-plugin": "^4.0.0-beta.14"
   }
 }
