@@ -5,19 +5,25 @@ import { graphql } from 'react-apollo';
 class SongList extends React.Component {
   renderSongs() {
     return this.props.data.songs.map((song) => {
-      return <li>{song.title}</li>;
+      return (
+        <li key={song.id} className='collection-item'>
+          {song.title}
+        </li>
+      );
     });
   }
 
   render() {
-    if (!this.props.data.loading) {
+    console.log(this.props);
+
+    if (this.props.data.loading) {
       return <div>Loading...</div>;
     }
-    console.log(this.props);
+
     return (
-      <div>
-        <div>{this.renderSongs}</div>
-      </div>
+      <ul className='collection'>
+        <div>{this.renderSongs()}</div>
+      </ul>
     );
   }
 }
@@ -25,6 +31,7 @@ class SongList extends React.Component {
 const query = gql`
   {
     songs {
+      id
       title
     }
   }
