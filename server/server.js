@@ -22,8 +22,10 @@ mongoose.connect(MONGO_URI, {
   useUnifiedTopology: true,
 });
 mongoose.connection
-  .once('open', () => console.log('Connected to MongoLab instance.'))
-  .on('error', (error) => console.log('Error connecting to MongoLab:', error));
+  .once('open', () => console.log('Connected to MongoDB Atlas.'))
+  .on('error', (error) =>
+    console.log('Error connecting to MongoDB Atlas:', error)
+  );
 
 app.use(bodyParser.json());
 app.use(
