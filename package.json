@@ -16,7 +16,7 @@
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "apollo-client": "^0.8.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.22.0",
